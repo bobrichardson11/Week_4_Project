@@ -1,4 +1,5 @@
-setwd("~/R/Week4_project/UCI HAR Dataset/combine")
+## Make sure to remove this before submitting
+setwd("C:/Users/bobri/OneDrive/Coursera/Week_4_Project")
 
 ## Merge training and test datasets
 
