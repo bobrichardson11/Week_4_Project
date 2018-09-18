@@ -6,7 +6,9 @@ setwd("C:/Users/bobri/OneDrive/Coursera/Week_4_Project")
 mydatatest <- read.table("x_test.txt", header = FALSE)
 mydatatrain <- read.table("x_train.txt", header = FALSE)
 alldata <- rbind(mydatatest, mydatatrain)
-##write.csv(alldata, "all.csv")
+
+## Save the new file to disk
+write.csv(alldata, "all.csv")
 
 ## Extract mean and standard deviation measures for each measurement
 
@@ -19,4 +21,5 @@ sd_values <- lapply(alldata, sd)
 ## Appropriately labels the data set with descriptive variable names.
 
 
-##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## From the data set in step 4, creates a second, independent tidy data 
+## set with the average of each variable for each activity and each subject.
